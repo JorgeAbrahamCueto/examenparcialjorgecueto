@@ -51,6 +51,33 @@ class Carrito {
             this.mostrarCarrito();
         });
 
+        const mediaQuery = window.matchMedia('(max-width: 800px)');
+        const mediaQuerySmall = window.matchMedia('(max-width: 600px)');
+
+        function handleMediaQueryChange(e) {
+            if (e.matches) {
+            document.querySelector('.carrito-cabecera').style.flexDirection = 'column';
+            document.querySelector('.carrito-cabecera').style.alignItems = 'center';
+            document.querySelectorAll('.carrito-producto').forEach(producto => {
+                producto.style.flexDirection = 'column';
+                producto.style.alignItems = 'center';
+            });
+            } else {
+            document.querySelector('.carrito-cabecera').style.flexDirection = 'row';
+            document.querySelector('.carrito-cabecera').style.alignItems = 'flex-start';
+            document.querySelectorAll('.carrito-producto').forEach(producto => {
+                producto.style.flexDirection = 'row';
+                producto.style.alignItems = 'flex-start';
+            });
+            }
+        }
+
+        mediaQuery.addListener(handleMediaQueryChange);
+        mediaQuerySmall.addListener(handleMediaQueryChange);
+
+        handleMediaQueryChange(mediaQuery);
+        handleMediaQueryChange(mediaQuerySmall);
+
         
         btnPagar.style.cssText = 'margin: 0.625em; padding: 0.625em 1.25em; background-color: #4CAF50; color: white; border: none; border-radius:2em; cursor: pointer;';
         btnVaciar.style.cssText = 'margin: 0.625em; padding: 0.625em 1.25em; background-color: #f44336; color: white; border: none; border-radius: 2em; cursor: pointer;';
