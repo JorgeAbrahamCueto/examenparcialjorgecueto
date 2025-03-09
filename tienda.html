@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La RetroMusicVideo/Tienda</title>
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/tiendaestilos.css">
+    <script src="/js/menutienda.js" defer></script>
+    <script src="/js/tienda.js" defer></script>
+    <script src="/js/bannertienda.js" defer></script>
+    
+</head>
+<body>
+    <header class="hero">
+        <div class="banner">
+            <img src="/images/leftarrow.svg" alt="leftarrow" class="testimony__arrow" id="before">
+            <div class="slide">
+                <picture class="active">
+                    <source srcset="/images/imagenes webp/bannerretro.webp" type="image/webp">
+                    <img class="img-baner" src="/images/bannerretro.jpg" alt="banner retro">
+                </picture>
+                <picture>
+                    <source srcset="/images/imagenes webp/bannerpelicula.webp" type="image/webp">
+                    <img class="img-baner" src="/images/bannerpelicula.png" alt="Banner Pelicula">
+                </picture>
+                <picture>
+                    <source srcset="/images/imagenes webp/bannervideojuegos.webp" type="image/webp">
+                    <img class="img-baner" src="/images/bannervideojuegos.png" alt="Banner Videojuegos">
+                </picture>
+            </div>
+            <img src="/images/rightarrow.svg" alt="rightarrow" class="testimony__arrow" id="next">
+        </div>
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 id="subir" class="nav__title">RetroMusicVideo</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <LI class="nav__items">
+                    <a href="/index.html" class="nav__links">Inicio</a>   
+                </LI>
+                <li class="nav__items">
+                    <a href="#musica" class="nav__links">Retro Musica</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#games" class="nav__links">Retro Games</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#pelas" class="nav__links">Retro Pelas</a>
+                </li>
+                <li class="nav_items">
+                    <a href="/carrito.html" target="_blank" class="nav__links">Carrito</a>
+                </li>
+                <img src="/images/close.svg" class="nav__close" alt="close">
+            </ul>
+            <div class="nav__menu">
+                <img src="/images/menu.svg" class="nav__img" alt="menu">
+            </div>
+        </nav>
+    </header>
+    </main>
+    <div id="tienda__contenedor">
+        <section class="price container">
+            <h2 id="musica">Retro Musica</h2>
+            <div class="price__table">
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/audioslave300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/audioslave300x300.jpg" alt="Audioslave" class="price__img">
+                    </figure>
+                    <p class="price__name">Audioslave – Audioslave</p>
+                    <h3 class="price__precio">s/.169</h3>
+                    <a href="#" class="price__cta"
+                       data-imagen="/images/Portadas Musica/audioslave300x300.jpg"
+                       data-nombre="Audioslave – Audioslave"
+                       data-descripcion="Álbum debut de la banda de rock estadounidense Audioslave."
+                       data-categoria="Musica-Alternativo"
+                       data-precio="169">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/britney-spears300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/britney spears300x300.jpg" alt="Britney Spears" class="price__img">
+                    </figure>
+                    <p class="price__name">Britney Spears - Oops! i did it again</p>
+                    <h3 class="price__precio">s/.220</h3>
+                    <a href="#" class="price__cta"
+                        data-imagen="/images/Portadas Musica/britney spears300x300.jpg"
+                        data-nombre="Britney Spears - Oops! i did it again"
+                        data-descripcion="Segundo álbum de estudio de Britney Spears, lanzado en el año 2000."
+                        data-categoria="Musica-Pop"
+                        data-precio="220">Agregar al carrito</a>
+                    </a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/hector-lavoe300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/hector lavoe300x300.jpg" alt="Hector Lavoe" class="price__img">
+                    </figure>
+                    <p class="price__name">Hector Lavoe - Revento</p>
+                    <h3 class="price__precio">s/.180</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas Musica/hector lavoe300x300.jpg"
+                    data-nombre="Hector Lavoe - Revento"
+                    data-descripcion="Álbum de salsa del cantante puertorriqueño Héctor Lavoe, lanzado en 1985."
+                    data-categoria="Musica-Salsa"
+                    data-precio="180">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/limp-bizkit300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/limp bizkit300x300.jpg" alt="Limp Bizkit" class="price__img">
+                    </figure>
+                    <p class="price__name">Limp Bizkit - Significant Other</p>
+                    <h3 class="price__precio">s/.185</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas Musica/limp bizkit300x300.jpg"
+                    data-nombre="Limp Bizkit - Significant Other"
+                    data-descripcion="Segundo álbum de estudio de la banda estadounidense Limp Bizkit, lanzado en 1999."
+                    data-categoria="Musica-Nu Metal"
+                    data-precio="185">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/nirvana300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/nirvana300x300.jpg" alt="Nirvana" class="price__img">
+                    </figure>
+                    <p class="price__name">Nirvana - In Utero</p>
+                    <h3 class="price__precio">s/.165</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas Musica/nirvana300x300.jpg"
+                    data-nombre="Nirvana - In Utero"
+                    data-descripcion="Tercer y último álbum de estudio de la banda estadounidense Nirvana, lanzado en 1993."
+                    data-categoria="musica-Grunge"
+                    data-stock="35"
+                    data-precio="165">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/NoDoubtCover300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/NoDoubtCover300x300.jpg" alt="No Doubt" class="price__img">
+                    </figure>
+                    <p class="price__name">No Doubt - No Doubt</p>
+                    <h3 class="price__precio">s/.229</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas Musica/NoDoubtCover300x300.jpg"
+                    data-nombre="No Doubt - No Doubt"
+                    data-descripcion="Álbum debut de la banda estadounidense No Doubt, lanzado en 1992."
+                    data-categoria="Musica-Ska"
+                    data-precio="229">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas Musica/PortadaMusicawebp/wu-tang-clan300x300.webp" type="image/webp">
+                        <img src="/images/Portadas Musica/wu tang clan300x300.jpg" alt="No Doubt" class="price__img">
+                    </figure>
+                    <p class="price__name">Wu Tang Clan – Enter The Wu Tang (36 Chambers)</p>
+                    <h3 class="price__precio">s/.150</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas Musica/wu tang clan300x300.jpg"
+                    data-nombre="Wu Tang Clan – Enter The Wu Tang (36 Chambers)"
+                    data-descripcion="Álbum debut del grupo de hip hop estadounidense Wu-Tang Clan, lanzado en 1993."
+                    data-categoria="Musica-Rap"
+                    data-precio="150">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+        <div class="subir">
+            <a href="#subir" class="subir__link">Ir al Inicio</a>
+        </div>
+        <div>
+        <hr class="linea">
+        </div>
+        <section class="price container">
+            <h2 id="games">Retro Games</h2>
+            <div class="price__table">
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/age of empires300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/age of empires300x300.jpg" alt="Age of Empires" class="price__img">
+                    </figure>
+                    <p class="price__name">Age of Empires</p>
+                    <h3 class="price__precio">s/.99</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/age of empires300x300.jpg"
+                    data-nombre="Age of Empires"
+                    data-descripcion="Juego de estrategia en tiempo real."
+                    data-categoria="Videojuegos-Estrategia"
+                    data-precio="99">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/fifa-98-201610922502_1300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/fifa-98-201610922502_1300x300.jpg" alt="Coocon" class="price__img">
+                    </figure>
+                    <p class="price__name">Fifa 98 - PS1</p>
+                    <h3 class="price__precio">s/.120</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/fifa-98-201610922502_1300x300.jpg"
+                    data-nombre="Fifa 98 - PS1"
+                    data-descripcion="Juego de fútbol para PlayStation 1."
+                    data-categoria="Videojeugos-Deportes"
+                    data-precio="120">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/Goldeneye64300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/Goldeneye64300x300.jpg" alt="Goldeneye" class="price__img">
+                    </figure>
+                    <p class="price__name">Goldeneye 64</p>
+                    <h3 class="price__precio">s/.299</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/Goldeneye64300x300.jpg"
+                    data-nombre="Goldeneye 64"
+                    data-descripcion="Juego de disparos en primera persona basado en la película de James Bond."
+                    data-categoria="Videojuegos-Shooter en primera persona"
+                    data-precio="299">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/need for speed300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/need for speed300x300.jpg" alt="Need for Speed" class="price__img">
+                    </figure>
+                    <p class="price__name">Need for Speed 2</p>
+                    <h3 class="price__precio">s/.200</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/need for speed300x300.jpg"
+                    data-nombre="Need for Speed 2"
+                    data-descripcion="Juego de carreras de autos lanzado en 1997."
+                    data-categoria="Videojuegos-Carrera"
+                    data-precio="200">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/resident evil300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/resident evil300x300.jpg" alt="Resident Evil" class="price__img">
+                    </figure>
+                    <p class="price__name">Resident Evil - Director's Cut - PS1</p>
+                    <h3 class="price__precio">s/.300</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/resident evil300x300.jpg"
+                    data-nombre="Resident Evil - Director's Cut - PS1"
+                    data-descripcion="Versión del director del juego de terror Resident Evil para PlayStation 1."
+                    data-categoria="Videojuegos-Survival Horror"
+                    data-precio="300">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/super mario world300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/super mario world300x300.jpg" alt="Super Mario World" class="price__img">
+                    </figure>
+                    <p class="price__name">Super Mario World</p>
+                    <h3 class="price__precio">s/.500</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/super mario world300x300.jpg"
+                    data-nombre="Super Mario World"
+                    data-descripcion="Juego de plataformas clásico de Super Nintendo, lanzado en 1990."
+                    data-categoria="Videojuegos-Plataformas"
+                    data-precio="500">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portadas de videojuegos/videojuegos webp/super_mario_bros-1698422300x300.webp" type="image/webp">
+                        <img src="/images/Portadas de videojuegos/super_mario_bros-1698422300x300.jpg" alt="Super Mario Bross" class="price__img">
+                    </figure>
+                    <p class="price__name">Super Mario Bross</p>
+                    <h3 class="price__precio">s/.799</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portadas de videojuegos/super_mario_bros-1698422300x300.jpg"
+                    data-nombre="Super Mario Bross"
+                    data-descripcion="Juego de plataformas clásico de Nintendo, lanzado en 1985."
+                    data-categoria="Videojuegos-Plataforma"
+                    data-precio="799">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+        <div class="subir">
+            <a href="#subir" class="subir__link">Ir al Inicio</a>
+        </div>
+        <div>
+            <hr class="linea">
+            </div>
+        <section class="price container">
+            <h2 id="pelas">Retro Pelas</h2>
+            <div class="price__table">
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/atrapado sin salida300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/atrapado sin salida300x300.jpg" alt="Atrapados sin Salida" class="price__img">
+                    </figure>
+                    <p class="price__name">Atrapados sin Salida</p>
+                    <h3 class="price__precio">s/.69</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/atrapado sin salida300x300.jpg"
+                    data-nombre="Atrapados sin Salida"
+                    data-descripcion="Película de drama dirigida por Miloš Forman, lanzada en 1975."
+                    data-categoria="HomeVideo-Psicologico"
+                    data-precio="69">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/cocoon300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/cocoon300x300.jpg" alt="Coocon" class="price__img">
+                    </figure>
+                    <p class="price__name">Cocoon</p>
+                    <h3 class="price__precio">s/.40</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/cocoon300x300.jpg"
+                    data-nombre="Cocoon"
+                    data-descripcion="Película de ciencia ficción dirigida por Ron Howard, lanzada en 1985."
+                    data-categoria="HomeVideo-Ciencia Ficcion"
+                    data-precio="40">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/el golpe300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/el golpe300x300.jpg" alt="El golpe" class="price__img">
+                    </figure>
+                    <p class="price__name">El Golpe</p>
+                    <h3 class="price__precio">s/.45</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/el golpe300x300.jpg"
+                    data-nombre="El Golpe"
+                    data-descripcion="Película de comedia y crimen dirigida por George Roy Hill, lanzada en 1973."
+                    data-categoria="HomeVideo-Comedia"
+                    data-precio="45">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/el señor de los anilloas300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/el señor de los anilloas300x300.jpg" alt="El señor de los anillos" class="price__img">
+                    </figure>
+                    <p class="price__name">El señor de los anillos - La Trilogia completa</p>
+                    <h3 class="price__precio">s/.200</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/el señor de los anilloas300x300.jpg"
+                    data-nombre="El señor de los anillos - La Trilogia completa"
+                    data-descripcion="Trilogía completa de la saga El Señor de los Anillos, dirigida por Peter Jackson."
+                    data-categoria="HomeVideo-Fantasia"
+                    data-precio="200">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/Moonwalker300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/Moonwalker300x300.jpg" alt="Moonwalker" class="price__img">
+                    </figure>
+                    <p class="price__name">Moonwalker</p>
+                    <h3 class="price__precio">s/.59.9</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/Moonwalker300x300.jpg"
+                    data-nombre="Moonwalker"
+                    data-descripcion="Película musical protagonizada por Michael Jackson, lanzada en 1988."
+                    data-categoria="HomeVideo-Fantasia"
+                    data-precio="59.9">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/rocky300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/rocky300x300.jpg" alt="Rocky" class="price__img">
+                    </figure>
+                    <p class="price__name">Rocky</p>
+                    <h3 class="price__precio">s/.59</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/rocky300x300.jpg"
+                    data-nombre="Rocky"
+                    data-descripcion="Película de drama y deporte dirigida por John G. Avildsen, lanzada en 1976."
+                    data-categoria="HomeVideo-Drama/Deporte"
+                    data-precio="59">Agregar al carrito</a>
+                </div>
+                <div class="price__element">
+                    <figure class="price__picture">
+                        <source srcset="/images/Portada Peliculas/peliculas webp/volver al futuro300x300.webp" type="image/webp">
+                        <img src="/images/Portada Peliculas/volver al futuro300x300.jpg" alt="Volver al futuo" class="price__img">
+                    </figure>
+                    <p class="price__name">Volver al Futuro</p>
+                    <h3 class="price__precio">s/.59</h3>
+                    <a href="#" class="price__cta"
+                    data-imagen="/images/Portada Peliculas/volver al futuro300x300.jpg"
+                    data-nombre="Volver al Futuro"
+                    data-descripcion="Película de ciencia ficción y aventura dirigida por Robert Zemeckis, lanzada en 1985."
+                    data-categoria="HomeVideo-Ciencia Ficcion"
+                    data-precio="59">Agregar al carrito</a>
+                </div>
+            </div>
+            
+        </section>
+        <div class="subir">
+            <a href="#subir" class="subir__link">Ir al Inicio</a>
+        </div>
+    </div>    
+    </main>
+        <footer class="footer">
+            <section class="footer__container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer__title">La RetroMusicVideo</h2>
+                    <ul class="nav__link nav__link--footer">
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Inicio</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav__links">Acerca de</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav__links">Contacto</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="#" class="nav__links">Tienda</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="footer__form" action="https://formspree.io/f/xdkajqvr"
+                method="POST">
+                    <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                    <div class="footer__inputs">
+                        <input type="email" placeholder="Email: " class="footer__input" name="email">
+                        <input type="submit" value="Registrate" class="footer__submit">
+                    </div>
+                </form>
+            </section>
+            <section class="footer__copy container">
+                <div class="footer__social">
+                    <a href="#" class="footer__icons"><img src="/images/facebook.svg" alt="fb" class="footer__img"></a>
+                    <a href="#" class="footer__icons"><img src="/images/ig.svg" alt="ig" class="footer__img"></a>
+                    <a href="#" class="footer__icons"><img src="/images/yt.svg" alt="yt" class="footer__img"></a>
+                </div>
+                <h3 class="footer__copyright">Derechos reservados &copy; Coco Elias</h3>
+            </section>
+        </footer>
